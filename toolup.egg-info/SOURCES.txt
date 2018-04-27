@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+toolup/__init__.py
+toolup/__main__.py
+toolup/dependency.py
+toolup/version.py
+toolup.egg-info/PKG-INFO
+toolup.egg-info/SOURCES.txt
+toolup.egg-info/dependency_links.txt
+toolup.egg-info/entry_points.txt
+toolup.egg-info/requires.txt
+toolup.egg-info/top_level.txt

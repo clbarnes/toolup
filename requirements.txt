@@ -1,0 +1,5 @@
+toml==0.9.4
+setuptools==39.0
+wheel==0.31
+twine==1.11
+bumpversion==0.5.3

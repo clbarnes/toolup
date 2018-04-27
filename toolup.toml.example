@@ -1,0 +1,15 @@
+target = "~/bin"
+
+[black]
+
+[pgcli]
+
+[pre-commit]
+    entry_points = [
+        "pre-commit",
+        "pre-commit-validate-config",
+        "pre-commit-validate-manifest"
+    ]
+
+[thefuck]
+    entry_points = ["fuck", "thefuck"]

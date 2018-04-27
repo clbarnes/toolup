@@ -1,0 +1,3 @@
+[console_scripts]
+toolup = toolup.__main__:main
+
