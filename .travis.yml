@@ -1,0 +1,18 @@
+language: python
+python:
+  - '3.6'
+install:
+  - make install-dev
+script:
+  - toolup -c toolup.toml.example
+deploy:
+  provider: pypi
+  user: clbarnes
+  password:
+    secure: h5f+SO9AQabkepnTn51ucOxmisdP05cKB0O5W1STtpsRZXNUXXeJUVAFzf6z2dCNHNhkn1ThSpUYH8mEVGgY8DQy/BAmtyBFYAicdmjLwTH05yPr8AfKmvoXINK6NtcHrgQrc0TJoT/ye9g7W+OWsraMbrZqanxQssCTofn0NWa1PADr2L8MrHjspbVPyIERGAPFeY5NTUBJeQmKdilprgbpzUH9HEn9+5Jh1TG/tjR3xrC17RMXR51/csbodmL17DmxIkjdRWck2rgwjTLUPga+UIefhQxTio0p+S9FAPZNikry+gOmR93ft4Nfzhd3k6IG8Fcgax9Nf5SHOPixkDLVtrc70nYDbyuBUoyILb7tuek2fkEyORvg/k0gGnuNNwY2URnYP7GiAyIBGizpCdpnHWpEP6cAQWwFdnr4EciurcvkePkBnNByYZnQUt7EMe3e7wKTsmSg9unxQQiUGuebMcI/oIe5OS6n9AdW/A00MYQQWIU3LfsI60Jyo0JGoQZ0TWD7fWuPPMF2av210wGj4qLlsqP+Fqk09ZIuw9u74aDgtZw+Ljdq//HRS2PchmBBOuY3+dyvn/jRGYVYpodQCWOy42HjS3dKhkmTgxwBf7VVeociSTIVbKm6XyznLiabzTd2dbv21Q0Ht6jECMAEg5YmDqY85LBuTO140ps=
+  on:
+    tags: true
+    branch: release
+    repo: clbarnes/toolup
+    python: 3.6
+  distributions: sdist bdist_wheel
