@@ -2,6 +2,8 @@
 
 Convenience package for installing python-based development tools
 
+Supports python >=3.6.1
+
 ## Motivation
 
 Python is a powerful and accessible language to read and write.
@@ -23,6 +25,12 @@ just for these tools.
 
 `toolup` helps you maintain a suite of development tools based on a simple TOML file,
 which are encapsulated in a virtual environment but accessible from anywhere.
+
+## Installation
+
+```bash
+pip install toolup
+```
 
 ## Usage
 
@@ -77,3 +85,14 @@ toolup -n black -n pgcli
 The resulting lists of names, install_args, and entry_points are `zip_longest`'d together.
 `toolup` will try to infer the install_args and entry_points from the name, 
 and the name from the install_args.
+
+### Example workflow
+
+You've just started up a new machine.
+You have a list of your favourite development tools, 
+which will be useful across a few projects, 
+while not actually being used by any of the code in those projects.
+
+You copy across your `.toolup.toml` (maybe using something like GNU stow),
+create a virtualenv for it, `pip install toolup && toolup`, 
+and all your tools are right where you want them again.
