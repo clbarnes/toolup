@@ -1,5 +1,5 @@
 toml==0.10.0
-setuptools==39.0
+setuptools==41.0.1
 wheel==0.33.4
 twine==1.11
 bumpversion==0.5.3
