@@ -2,7 +2,7 @@
 
 Convenience package for installing python-based development tools
 
-NOTE: This use case, minus to one-and-done config, is probably better handled by [pipsi](https://github.com/mitsuhiko/pipsi).
+NOTE: This use case, minus to one-and-done config, is probably better handled by [~~pipsi~~](https://github.com/mitsuhiko/pipsi) [pipx](https://github.com/pipxproject/pipx).
 
 Supports python >=3.6.1
 
